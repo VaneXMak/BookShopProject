@@ -1,5 +1,9 @@
 package model;
 
+import controller.OrderController;
+
+import java.util.Arrays;
+
 public class Order {
     private int idOrder;
     private int idClient;
@@ -27,5 +31,15 @@ public class Order {
 
     public int[] getBooks() {
         return books;
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "idOrder=" + idOrder +
+                ", idClient=" + idClient +
+                ", idEmployee=" + idEmployee +
+                ", books=" + Arrays.toString(books) +
+                '}';
     }
 }

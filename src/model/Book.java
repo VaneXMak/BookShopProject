@@ -40,4 +40,16 @@ public class Book {
     public int getAmount() {
         return amount;
     }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "idBook=" + idBook +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", price=" + price +
+                ", genre='" + genre + '\'' +
+                ", amount=" + amount +
+                '}';
+    }
 }
